@@ -10,7 +10,7 @@ body {
 /* Div containing the whole website */
 
 .container {
-	height: 100vh;
+	max-height: -webkit-fill-available;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -36,9 +36,10 @@ hr {
 	background-color: rgba(0, 0, 0, 35%);
 	height: 2px;
 }
+
 .time {
 	margin-top: 16px;
-	margin-bottom: 0px;
+	margin-bottom: 6px;
 	visibility: visible;
 	font-size: 18px;
 }
@@ -68,7 +69,8 @@ hr {
 
 /* Settings for the footer and for its elements */
 .footer {
-	margin-top: auto;
+	position: absolute;
+	bottom: 0;
 	box-sizing: border-box;
 	width: 100%;
 	padding: 10px;
