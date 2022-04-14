@@ -1,0 +1,203 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+	background-color: rgb(230, 247, 255);
+}
+/* Div containing the whole website */
+
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+/* Settings for h1 */
+
+h1 {
+	margin-top: 30px;
+	margin-bottom: 35px;
+	font-size: 4rem;
+}
+
+/* Settings for horizontal rule */
+
+hr {
+	border: 0;
+	clear: both;
+	display: block;
+	width: 150px;
+	background-color: rgba(0, 0, 0, 35%);
+	height: 2px;
+}
+.time {
+	margin-top: 16px;
+	margin-bottom: 0px;
+	visibility: visible;
+	font-size: 18px;
+}
+
+.valid-board {
+	font-size: 18px;
+	color: rgb(207, 14, 0);
+	visibility: hidden;
+}
+/* Settings for the sudoku board */
+
+#board {
+	width: 450px;
+	height: 450px;
+	margin: 10px auto 40px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Settings for the div containing the buttons */
+
+.buttons {
+	width: 400px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Settings for the footer and for its elements */
+.footer {
+	margin-top: auto;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	background-color: rgb(0, 17, 26);
+	color: rgb(230, 247, 255);
+	text-align: center;
+}
+
+h2 {
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 8px;
+	font-size: 20px;
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif;
+	margin-top: 8px;
+	margin-bottom: 1px;
+	font-size: 10px;
+}
+
+/* Tile section */
+
+.tile {
+	font-size: 1.6rem;
+	box-sizing: border-box;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 35%);
+	text-align: center;
+}
+
+.tile-background {
+	background-color: rgba(0, 0, 0, 20%);
+}
+
+input:invalid {
+	border: red solid 3px;
+}
+
+*:focus {
+	outline: none;
+}
+
+/* Adding extra borders */
+
+.tile-top {
+	border-top: 5px solid rgba(0, 0, 0, 60%);
+}
+
+.tile-right {
+	border-right: 5px solid rgba(0, 0, 0, 60%);
+}
+
+.tile-bottom {
+	border-bottom: 5px solid rgba(0, 0, 0, 60%);
+}
+.tile-left {
+	border-left: 5px solid rgba(0, 0, 0, 60%);
+}
+
+.big-tile-right {
+	border-right: 4px solid rgba(0, 0, 0, 60%);
+}
+
+.big-tile-bottom {
+	border-bottom: 4px solid rgba(0, 0, 0, 60%);
+}
+
+/* Buttons section  */
+
+.btnp {
+	background: #009e18;
+	background-image: -webkit-linear-gradient(top, #009e18, #00a01d);
+	background-image: -moz-linear-gradient(top, #009e18, #00a01d);
+	background-image: -ms-linear-gradient(top, #009e18, #00a01d);
+	background-image: -o-linear-gradient(top, #009e18, #00a01d);
+	background-image: linear-gradient(to bottom, #009e18, #00a01d);
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	border-radius: 5px;
+	font-family: Arial;
+	color: white;
+	font-size: 22px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: none;
+}
+
+.btnp:hover {
+	background: #198f13;
+	background-image: -webkit-linear-gradient(top, #198f13, #00541c);
+	background-image: -moz-linear-gradient(top, #198f13, #00541c);
+	background-image: -ms-linear-gradient(top, #198f13, #00541c);
+	background-image: -o-linear-gradient(top, #198f13, #00541c);
+	background-image: linear-gradient(to bottom, #198f13, #00541c);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btns {
+	background: #ff0000;
+	background-image: -webkit-linear-gradient(top, #ff0000, #9e0000);
+	background-image: -moz-linear-gradient(top, #ff0000, #9e0000);
+	background-image: -ms-linear-gradient(top, #ff0000, #9e0000);
+	background-image: -o-linear-gradient(top, #ff0000, #9e0000);
+	background-image: linear-gradient(to bottom, #ff0000, #9e0000);
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	border-radius: 5px;
+	font-family: Arial;
+	color: white;
+	font-size: 22px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: none;
+}
+
+.btns:hover {
+	background: #b30000;
+	background-image: -webkit-linear-gradient(top, #b30000, #5c0000);
+	background-image: -moz-linear-gradient(top, #b30000, #5c0000);
+	background-image: -ms-linear-gradient(top, #b30000, #5c0000);
+	background-image: -o-linear-gradient(top, #b30000, #5c0000);
+	background-image: linear-gradient(to bottom, #b30000, #5c0000);
+	text-decoration: none;
+	cursor: pointer;
+}
